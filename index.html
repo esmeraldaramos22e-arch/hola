@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publicaciones Docente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="contenedor">
+    <h2>📚 Actividades Publicadas</h2>
+
+    <button id="btnDocente">👩‍🏫 Modo Docente</button>
+
+    <div id="formularioDocente" style="display:none;">
+      <textarea id="textoPublicacion" placeholder="Escribe la nueva actividad..."></textarea>
+      <br>
+      <button id="btnPublicar">Publicar</button>
+      <button id="btnCerrarForm">Cerrar</button>
+    </div>
+
+    <div id="publicaciones" class="publicaciones"></div>
+  </div>
+
+  <!-- Modal de código docente -->
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal">
+      <h3>🔐 Ingresar código docente</h3>
+      <input id="codigoInput" type="password" placeholder="Código..." />
+      <div class="modal-btns">
+        <button id="modalOk">Aceptar</button>
+        <button id="modalCancel">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
